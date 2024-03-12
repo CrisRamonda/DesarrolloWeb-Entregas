@@ -1,5 +1,11 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+} 
+
 /* ESILOS GENERALES */
-* {
+* { 
     background-color: #ddcce5;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -9,23 +15,30 @@
 
 /* ESTILOS DEL NAV */
 header nav {
-    margin-bottom: 10px;
+    margin: 5px 7px;
     max-height: 70px;
     display: flex;
+    justify-content: space-around;
 }
 
 header nav .logoNav {
     max-width: 70px;
+    margin-right: 2px;
 }
 
 header nav ul {
     list-style: none;
-    display: flex;
-    gap: 4px
+    display: flex; 
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 3%; 
 }
 
 header nav ul a {
     text-decoration: none;
+    display:flex;
+    align-items: center;
+    
 }
 
 header nav ul a li {
@@ -33,6 +46,9 @@ header nav ul a li {
     color: black;
 }
 
+header nav ul a li:hover {
+    color: #56007C;
+}
 
 
 /* ESTILOS DEL MAIN - INICIO */
