@@ -53,9 +53,9 @@ header nav ul a li:hover {
 
 /* ESTILOS DEL MAIN - INICIO */
 
-body main {
-    margin-left: 15%;
-    margin-right: 15%;
+main{
+    display: flex;
+    flex-direction: column;
 }
 
 main h1 {
