@@ -15,10 +15,21 @@
 
 h1 {
     font-weight: 600;
+    font-size: xx-large;
 }
 
 h2 {
+    font-size: x-large;
+    font-weight: 450;
+}
+
+p {
     font-weight: 400;
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
 }
 
 body {
@@ -146,18 +157,30 @@ header nav ul a li:hover {
 
 /* PRODUCTOS */
 
-.productos article {
+.mainProductos {
+    display: block;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.articleProductos {
     text-align: center;
 }
 
-.productos img {
-    max-width: 200px;
-    margin-top: 50px;
+.imagenProductos {
+    max-width: 300px;
+    margin: 30px 0 10px 0;
+    border-radius: 10px;
 }
 
-.productos article ul {
+.subTituloProductos {
+    margin: 5px 50px 15px 50px;
+}
+
+.articleProductos ul {
     text-align: left;
-    margin-left: 40%;
+    padding-left: 40%;
 }
 
 /* NOSOTROS */
@@ -192,16 +215,13 @@ header nav ul a li:hover {
 
 /* ESTILOS DEL FOOTER */
 
+
+
 .footerInicio {
     margin-top: 200px;
-    text-align: center;
 }
 
-.footerServicios {
-    text-align: center;
-}
-
-.footerCategorias {
-    text-align: center;
+.footerProductos {
+    margin-top: 50px;
 }
 
