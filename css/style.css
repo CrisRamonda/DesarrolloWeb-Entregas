@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+       
 } 
 
 /* ESILOS GENERALES */
@@ -12,33 +13,20 @@
     font-style: normal;
 }
 
+body {
+    background-color: #ddcce5;
+}
 
 /* ESTILOS DEL NAV */
-header nav {
-    margin: 5px 7px;
-    max-height: 70px;
-    display: flex;
-    justify-content: space-around;
-}
-
 header nav .logoNav {
     max-width: 70px;
-    margin-right: 2px;
 }
 
-header nav ul {
+header nav .listaNav {
     list-style: none;
-    display: flex; 
     justify-content: space-around;
     width: 90%;
     margin-left: 3%; 
-}
-
-header nav ul a {
-    text-decoration: none;
-    display:flex;
-    align-items: center;
-    
 }
 
 header nav ul a li {
@@ -53,14 +41,24 @@ header nav ul a li:hover {
 
 /* ESTILOS DEL MAIN - INICIO */
 
-main{
+main {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 main h1 {
+    margin: 30px;
+}
+
+main h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 10px;
+}
+
+main .parrafoIndex {
+    margin: 20px 10px;
+
 }
 
 .fotoFrente {
@@ -156,7 +154,7 @@ main h1 {
 
 /* ESTILOS DEL FOOTER */
 
-footer {
-    margin-top: 50px;
+.footerIndex {
+    margin-top: 200px;
     text-align: center;
 }
