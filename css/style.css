@@ -13,6 +13,14 @@
     font-style: normal;
 }
 
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
+}
+
 body {
     background-color: #ddcce5;
 }
@@ -41,22 +49,22 @@ header nav ul a li:hover {
 
 /* ESTILOS DEL MAIN - INICIO */
 
-main {
+.mainInicio {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-main h1 {
+.tituloInicio {
     margin: 30px;
 }
 
-main h2 {
+.subTituloInicio {
     text-align: center;
     margin: 10px;
 }
 
-main .parrafoIndex {
+.parrafoInicio {
     margin: 20px 10px;
 
 }
@@ -68,40 +76,70 @@ main .parrafoIndex {
 
 
 /* SERVICIOS */
+.mainServicios {
+    text-align: center;
+}
+
+.sectionServicios {
+    display: block;
+}
+
+.articleServicios {
+    display: block;
+    box-sizing: content-box;
+    margin:20px 0;
+    height: 500px;
+}
+
+.tituloServicios {
+    margin: 10px 0 30px 0;
+}
 
 .fotoServicio {
-    width: 40%;
+    border-radius: 10px;
+    max-width: 80%;
 }
 
-.servicio {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
+.subTituloServicios {
+    margin: 20px;
 }
 
-.servicio h2 {
-    margin-left: 3%;
-    margin-right: 3%;
+.parrafoServicios {
+    margin: 0 50px;
+    text-align: left;
 }
 
 
 /* CATEGORIAS */
 
-.categorias img {
-    max-width: 350px;
-}
-
-.categorias article {
+.mainCategorias {
+    flex-direction: column;
     text-align: center;
+}
+
+.tituloCategorias {
+    margin: 10px 0 30px 0;
+}
+
+.imagenCategorias {
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.articleCategorias {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 450px;
 
 }
 
-.categorias h2 {
+.subTituloCategorias {
     color: black;
+    margin-top: 10px;
 }
 
-.categorias a {
+.linkCategorias {
     text-decoration: none;
 }
 
@@ -154,7 +192,16 @@ main .parrafoIndex {
 
 /* ESTILOS DEL FOOTER */
 
-.footerIndex {
+.footerInicio {
     margin-top: 200px;
     text-align: center;
 }
+
+.footerServicios {
+    text-align: center;
+}
+
+.footerCategorias {
+    text-align: center;
+}
+
