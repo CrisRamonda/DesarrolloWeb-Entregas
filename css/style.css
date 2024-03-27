@@ -94,19 +94,24 @@ header nav ul a li:hover {
 }
 
 .sectionServicios {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .articleServicios {
-    display: block;
-    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin:4vh 0;
     height: 55vh;
+    width: 50vh;
+    flex-direction: column;
 }
 
 .tituloServicios {
-    margin: 3vh 0 3vh 0;
+    margin: 2vh 0 2vh 0;
 }
 
 .fotoServicio {
@@ -120,19 +125,20 @@ header nav ul a li:hover {
 
 .parrafoServicios {
     margin: 0 4vh;
-    text-align: left;
+    max-width: 40vh;
+
 }
 
 
 /* CATEGORIAS */
 
 .mainCategorias {
-    flex-direction: column;
+    display: grid;
     text-align: center;
 }
 
 .tituloCategorias {
-    margin: 10px 0 30px 0;
+    margin: 2vh 0 4vh 0;
 }
 
 .imagenCategorias {
@@ -150,7 +156,7 @@ header nav ul a li:hover {
 
 .subTituloCategorias {
     color: black;
-    margin-top: 10px;
+    margin-top: 2vh;
 }
 
 .linkCategorias {
@@ -161,29 +167,39 @@ header nav ul a li:hover {
 /* PRODUCTOS */
 
 .mainProductos {
-    display: block;
-    align-items: center;
+    display: grid;
     text-align: center;
-    
+  
+}
+
+.sectionProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .articleProductos {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+
 .imagenProductos {
-    max-width: 300px;
-    margin: 30px 0 10px 0;
+    max-width: 40vh;
+    margin: 3vh 0 2vh 0;
     border-radius: 10px;
 }
 
 .subTituloProductos {
-    margin: 5px 50px 15px 50px;
+    max-width: 40vh;
 }
+
 
 .articleProductos ul {
     text-align: left;
-    padding-left: 40%;
 }
 
 /* NOSOTROS */
@@ -223,6 +239,7 @@ header nav ul a li:hover {
     margin-top: 21vh;
 }
 
+
 .footerProductos {
     margin-top: 50px;
 }
@@ -238,6 +255,8 @@ header nav ul a li:hover {
 ***********/
 
 @media screen and (min-width: 600px) {
+    
+    /* GENERALES */
     * {
         font-size: 500;
     }
@@ -257,4 +276,95 @@ header nav ul a li:hover {
         font-size: medium;
     }
 
+    /* INICIO */
+
+    .fotoFrente {
+        max-height: 85vh;
+    }
+
+    /* SERVICIOS */
+
+    .articleServicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 35vh;
+        width: 65vh;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+
+    .parrafoServicios {
+        text-align: left;
+    }
+
+
+    /* CATEGORIAS */
+    
+    .mainCategorias {
+        justify-items: center;
+    }
+    .sectionCategorias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vh;
+
+    }
+
+    .articleCategorias {
+        height: 35vh;
+    }
+        
+    .imagenCategorias {
+        max-width: 25vh;
+    }
+
+
+
+    
+
 }
+
+
+
+/***********
+  MQ TABLET PAISAJE
+***********/
+
+@media screen and (min-width: 768px) {
+
+    /* CATEGORIAS */
+    
+    .mainCategorias {
+        justify-items: center;
+    }
+
+    .sectionCategorias {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5vh;
+       }
+
+    
+    /* PRODUCTOS */
+    .mainProductos {
+        justify-items: center;
+    }
+    
+    .sectionProductos {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 7vh;
+    }
+   
+
+    .articleProductos {
+        max-width: 25vh;
+    }
+
+    .imagenProductos {
+        max-width: 25vh;
+    }
+
+}
+
