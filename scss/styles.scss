@@ -1,0 +1,24 @@
+// Imports
+@import "abstracts/vars";
+
+/* RESET y GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: $colorPrincipal;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;  
+    list-style: none;
+} 
+
+h1 {
+    @include fuenteGrande;
+}
+
+h2, h3 {
+    @include fuenteMedia;
+}
+
+p, li, a {
+    @include fuentePequeña;
+}
