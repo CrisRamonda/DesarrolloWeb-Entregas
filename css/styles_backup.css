@@ -1,3 +1,5 @@
+/* RESET Y GENERALES*/
+
 /* RESET */
 *{
     margin: 0;
@@ -7,12 +9,12 @@
 
 /* ESILOS GENERALES */
 * { 
-    background-color: #ddcce5;
+    background-color: #ddcce5; /* VARIALES O LISTA DE COLORES */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
+/* MIXIN FUENTES */
 h1 {
     font-weight: 600;
     font-size: xx-large;
@@ -34,10 +36,10 @@ li {
 }
 
 body {
-    background-color: #ddcce5;
+    background-color: #ddcce5; /* VARIABLE O LISTA COLORES */
 }
 
-footer {
+footer {    /* MIXIN FOOTER */
     margin-top: 5vh;
     background-color: #dbbfe7;
     text-align: center;
@@ -48,7 +50,7 @@ footer {
 
 
 
-/* ESTILOS DEL NAV */
+/* ESTILOS DEL NAV */ /* AL PRINCIPIAL */
 .navbar {
     background-color: #dbbfe7;
 }
@@ -70,31 +72,31 @@ header nav .logoNav {
     background-color: #dbbfe7;
 }
 
-header nav ul a li {
+header nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-header nav ul a li:hover {
+header nav ul li a:hover {
     color: #56007C;
 }
 
 
 /* INICIO */
-
+/* AL ARCHIVO DE INICIO */
 
 .mainInicio {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
+    align-items: center;/* MIXIN FLEX COLUMNA */
     min-height: 81vh;
 }
 
 .tituloInicio {
     margin: 3vh;
 }
-
+/* hacer mixin d e titulos */
 
 .subTituloInicio {
     text-align: center;
@@ -111,6 +113,9 @@ header nav ul a li:hover {
     align-items: center;
     max-width: 100%;
 }
+
+
+
 
 
 /* SERVICIOS */
@@ -136,7 +141,7 @@ header nav ul a li:hover {
 }
 
 .tituloServicios {
-    margin: 4vh 0 2vh 0;
+    margin: 4vh 0 2vh 0; /* INCLUIR EN TITULOS H1  */ 
 }
 
 .fotoServicio {
@@ -155,11 +160,14 @@ header nav ul a li:hover {
 }
 
 
+
+
+
 /* CATEGORIAS */
 
 .mainCategorias {
-    display: grid;
-    text-align: center;
+    /* display: grid; */
+    text-align: center;  /* MIXIN PARA CARDS DE CATEGORÍAS Y PRODUCTOS - GRID */
 }
 
 .tituloCategorias {
@@ -167,7 +175,7 @@ header nav ul a li:hover {
 }
 
 .imagenCategorias {
-    max-width: 350px;
+    /* max-width: 350px; */
     border-radius: 10px;
 }
 
@@ -175,7 +183,7 @@ header nav ul a li:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 450px;
+    /* height: 450px; */
 
 }
 
@@ -187,6 +195,9 @@ header nav ul a li:hover {
 .linkCategorias {
     text-decoration: none;
 }
+
+
+
 
 
 /* PRODUCTOS */
@@ -215,7 +226,7 @@ header nav ul a li:hover {
     margin-top: 4vh;
 }
 
-
+/*fotoProductos*/
 .imagenProductos {
     max-width: 40vh;
     margin: 3vh 0 2vh 0;
@@ -230,6 +241,9 @@ header nav ul a li:hover {
 .articleProductos ul {
     text-align: left;
 }
+
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 
 /* NOSOTROS */
 
@@ -262,7 +276,7 @@ header nav ul a li:hover {
     width: 6vh;
 }
 
-
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
 
 /***********
   MQ TABLET

@@ -4,18 +4,3 @@ $colorPrincipal: #ddcce5;
 $colorSecundario: #dbbfe7;
 
 
-// TAMAÑOS FUENTE
-@mixin fuenteGrande {
-    font-size: xx-large;
-    font-weight: 600;
-}
-
-@mixin fuenteMedia {
-    font-size: x-large;
-    font-weight: 450;
-}
-
-@mixin fuentePequeña {
-    font-weight: 400;
-    font-size: medium;
-}

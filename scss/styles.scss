@@ -1,15 +1,22 @@
 // Imports
 @import "abstracts/vars";
+@import "abstracts/mixins";
 
-/* RESET y GENERALES*/
+
+/* RESET */
 *{
     margin: 0;
     padding: 0;
+} 
+
+
+/* GENERALES */
+* {
     background-color: $colorPrincipal;
     font-family: "Poppins", sans-serif;
     font-style: normal;  
     list-style: none;
-} 
+}
 
 h1 {
     @include fuenteGrande;
@@ -22,3 +29,169 @@ h2, h3 {
 p, li, a {
     @include fuentePequeña;
 }
+
+
+/* ESTILOS NAV */
+nav {
+
+    background-color: $colorSecundario;
+    
+    .navbar-toggler-icon, div, a, ul, li, .logoNav {
+        background-color: $colorSecundario;   
+    }
+   
+    .logoNav {
+        width: 7vh;
+    }  
+}
+
+
+
+/* ESTILOS INICIO */
+.mainInicio {
+    @include flexColumna;
+    min-height: 89vh;
+
+
+    .fotoFrente {
+        align-items: center;
+        width: 100vw;
+    }
+
+    .tituloInicio {
+        @include tituloPrincipal;
+    }
+
+    .subTituloInicio {
+        @include subTitulo;
+    }
+
+    .sectionInicio {
+        
+        .parrafoInicio {
+            margin: 3vh;
+            max-width: 80vh;
+        }
+    }
+}
+
+.footerInicio {
+    @include footerGeneral;
+}
+
+
+/* ESTILOS SERVICIOS */
+.mainServicios {
+    
+    .tituloServicios {
+        @include tituloPrincipal;
+    }  
+
+    .sectionServicios {
+        @include flexColumna;
+ 
+        .articleServicios {
+            @include flexColumna;
+            height: 55vh;
+            margin-bottom: 3vw;
+
+            .subTituloServicios {
+                @include subTitulo;
+            }
+
+            .fotoServicios {
+                @include fotoArticulo;
+                width: 35vh;
+            }
+
+            .parrafoServicios {
+                max-width: 35vh;
+            }
+
+        }
+    }
+}
+
+.footerServicios {
+    @include footerGeneral;
+}
+
+
+/* ESTILOS CATEGORIAS */
+.mainCategorias {
+
+    .tituloCategorias {
+        @include tituloPrincipal;
+    }
+
+    .sectionCategorias {
+        
+        .articleCategorias {
+            @include flexColumna;
+            height: 50vh;
+
+            .linkCategorias {
+                text-decoration: none;
+
+                .fotoCategorias {
+                    @include fotoArticulo;              
+                    width: 35vh;
+                }
+    
+                .subTituloCategorias {
+                    @include subTitulo;
+                }
+            }
+
+        }
+    }
+}
+
+.footerCategorias {
+    @include footerGeneral;
+}
+
+
+/* ESTILOS PRODUCTOS */
+.mainProductos {
+
+    .tituloProductos {
+        @include tituloPrincipal;
+    }
+
+    .sectionProductos {
+        @include flexColumna;
+    
+        .articleProductos {
+            @include flexColumna;
+            height: 65vh;
+
+            .fotoProductos {
+                @include fotoArticulo;
+                width: 35vh;
+            }
+
+            .subTituloProductos {
+                @include subTitulo;
+                width: 80vw;
+            }
+
+            ul {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.footerProductos {
+    @include footerGeneral;
+}
+
+
+/* ESTILOS NOSOTROS */
+
+
+/* ESTILOS FOOTER */
+
+// poner un footer general en lugar de mixin si todos son iguales
+
