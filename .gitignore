@@ -1,2 +1,6 @@
 #Carpeta VsCode
 /.vscode/
+
+# CSS
+css/styles_backup.css
+css/styles_original.css

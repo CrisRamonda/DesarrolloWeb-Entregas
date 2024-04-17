@@ -30,6 +30,12 @@ p, li, a {
   color: black;
 }
 
+footer {
+  text-align: center;
+  background-color: #dbbfe7;
+  width: 100%;
+}
+
 /* ESTILOS NAV */
 nav {
   background-color: #dbbfe7;
@@ -66,12 +72,6 @@ nav .logoNav {
   max-width: 80vh;
 }
 
-.footerInicio {
-  text-align: center;
-  background-color: #dbbfe7;
-  width: 100%;
-}
-
 /* ESTILOS SERVICIOS */
 .mainServicios .tituloServicios {
   text-align: center;
@@ -91,6 +91,10 @@ nav .logoNav {
   height: 55vh;
   margin-bottom: 3vw;
 }
+.mainServicios .sectionServicios .articleServicios:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
 .mainServicios .sectionServicios .articleServicios .subTituloServicios {
   text-align: center;
   margin: 1vh;
@@ -105,12 +109,6 @@ nav .logoNav {
   max-width: 35vh;
 }
 
-.footerServicios {
-  text-align: center;
-  background-color: #dbbfe7;
-  width: 100%;
-}
-
 /* ESTILOS CATEGORIAS */
 .mainCategorias .tituloCategorias {
   text-align: center;
@@ -122,6 +120,10 @@ nav .logoNav {
   align-items: center;
   text-align: center;
   height: 50vh;
+}
+.mainCategorias .sectionCategorias .articleCategorias:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
 }
 .mainCategorias .sectionCategorias .articleCategorias .linkCategorias {
   text-decoration: none;
@@ -135,12 +137,6 @@ nav .logoNav {
 .mainCategorias .sectionCategorias .articleCategorias .linkCategorias .subTituloCategorias {
   text-align: center;
   margin: 1vh;
-}
-
-.footerCategorias {
-  text-align: center;
-  background-color: #dbbfe7;
-  width: 100%;
 }
 
 /* ESTILOS PRODUCTOS */
@@ -161,6 +157,10 @@ nav .logoNav {
   text-align: center;
   height: 65vh;
 }
+.mainProductos .sectionProductos .articleProductos:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
 .mainProductos .sectionProductos .articleProductos .fotoProductos {
   margin: 2vh;
   border-radius: 10px;
@@ -176,13 +176,29 @@ nav .logoNav {
   text-align: left;
 }
 
-.footerProductos {
+/* ESTILOS NOSOTROS */
+.mainNosotros .sectionNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  background-color: #dbbfe7;
-  width: 100%;
+}
+.mainNosotros .sectionNosotros .imagenNosotros {
+  max-width: 40vh;
+  margin-top: 4vh;
+}
+.mainNosotros .sectionNosotros .subTituloNosotros {
+  text-align: center;
+  margin: 1vh;
+}
+.mainNosotros .sectionNosotros ul {
+  margin-bottom: 3vh;
+}
+.mainNosotros .sectionNosotros a img {
+  margin: 0 0 2vh 0;
+  width: 6vh;
 }
 
-/* ESTILOS NOSOTROS */
 /* ESTILOS FOOTER */
 
 /*# sourceMappingURL=styles.css.map */

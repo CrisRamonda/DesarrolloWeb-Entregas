@@ -30,6 +30,10 @@ p, li, a {
     @include fuentePequeña;
 }
 
+footer {
+    @include footerGeneral;
+}
+
 
 /* ESTILOS NAV */
 nav {
@@ -75,10 +79,6 @@ nav {
     }
 }
 
-.footerInicio {
-    @include footerGeneral;
-}
-
 
 /* ESTILOS SERVICIOS */
 .mainServicios {
@@ -94,6 +94,10 @@ nav {
             @include flexColumna;
             height: 55vh;
             margin-bottom: 3vw;
+
+            &:hover {
+                @include hoverFoto;
+            }
 
             .subTituloServicios {
                 @include subTitulo;
@@ -112,10 +116,6 @@ nav {
     }
 }
 
-.footerServicios {
-    @include footerGeneral;
-}
-
 
 /* ESTILOS CATEGORIAS */
 .mainCategorias {
@@ -129,6 +129,10 @@ nav {
         .articleCategorias {
             @include flexColumna;
             height: 50vh;
+            
+            &:hover {
+                @include hoverFoto;
+            }
 
             .linkCategorias {
                 text-decoration: none;
@@ -136,6 +140,8 @@ nav {
                 .fotoCategorias {
                     @include fotoArticulo;              
                     width: 35vh;
+
+
                 }
     
                 .subTituloCategorias {
@@ -145,10 +151,6 @@ nav {
 
         }
     }
-}
-
-.footerCategorias {
-    @include footerGeneral;
 }
 
 
@@ -165,6 +167,10 @@ nav {
         .articleProductos {
             @include flexColumna;
             height: 65vh;
+
+            &:hover {
+                @include hoverFoto;
+            }
 
             .fotoProductos {
                 @include fotoArticulo;
@@ -183,15 +189,39 @@ nav {
     }
 }
 
-.footerProductos {
-    @include footerGeneral;
-}
-
 
 /* ESTILOS NOSOTROS */
+
+.mainNosotros {
+
+    .sectionNosotros {
+        @include flexColumna;
+
+        .imagenNosotros {
+            max-width: 40vh;
+            margin-top: 4vh;
+        }
+
+        .subTituloNosotros {
+            @include subTitulo;
+        }
+
+        ul {
+            margin-bottom: 3vh;
+        }
+
+        a {
+            img {
+                margin: 0 0 2vh 0;;
+                width: 6vh;
+            }
+        }
+    }
+
+}
 
 
 /* ESTILOS FOOTER */
 
-// poner un footer general en lugar de mixin si todos son iguales
+
 

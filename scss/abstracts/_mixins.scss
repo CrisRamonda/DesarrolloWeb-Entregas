@@ -31,12 +31,19 @@
     margin: 1vh;
 }
 
-// SOMBRA
+// MIXIN FOTOS
 
 @mixin fotoArticulo {
     margin: 2vh;
     border-radius: 10px;
     box-shadow: 3px 3px 7px 1px black;
+}
+
+// HOVER FOTOS
+
+@mixin hoverFoto {
+    transform: scale(1.05);
+    transition: 0.7s;
 }
 
 //  FLEX COLUMNA
