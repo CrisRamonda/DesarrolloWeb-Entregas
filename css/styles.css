@@ -242,7 +242,7 @@ nav .logoNav {
   .mainCategorias .sectionCategorias .articleCategorias {
     height: 45vh;
     width: 27vw;
-    gap: 5vh;
+    gap: 2vh;
     margin-bottom: 1vh;
   }
   .mainCategorias .sectionCategorias .articleCategorias .linkCategorias .fotoCategorias {

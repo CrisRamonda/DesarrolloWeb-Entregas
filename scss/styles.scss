@@ -271,7 +271,7 @@ nav {
             grid-template-columns: repeat(3, 1fr);
 
             .articleCategorias {
-                @include articleSize(45vh, 27vw, 5vh);
+                @include articleSize(45vh, 27vw, 2vh); //AGREGAR MQ PARA MAS ANCHO Y CAMBIAR ALTURA DEL ARTICULO
                 margin-bottom: 1vh;
 
                 .linkCategorias {
