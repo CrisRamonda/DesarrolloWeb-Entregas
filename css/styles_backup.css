@@ -166,7 +166,7 @@ header nav ul li a:hover {
 /* CATEGORIAS */
 
 .mainCategorias {
-    /* display: grid; */
+    display: grid;
     text-align: center;  /* MIXIN PARA CARDS DE CATEGORÍAS Y PRODUCTOS - GRID */
 }
 
@@ -175,7 +175,7 @@ header nav ul li a:hover {
 }
 
 .imagenCategorias {
-    /* max-width: 350px; */
+    max-width: 350px;
     border-radius: 10px;
 }
 
@@ -183,7 +183,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* height: 450px; */
+    height: 450px;
 
 }
 

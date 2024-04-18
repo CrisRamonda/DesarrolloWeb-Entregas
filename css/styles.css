@@ -25,8 +25,8 @@ h2, h3 {
 }
 
 p, li, a {
-  font-weight: 400;
   font-size: medium;
+  font-weight: 400;
   color: black;
 }
 
@@ -67,6 +67,12 @@ nav .logoNav {
   text-align: center;
   margin: 1vh;
 }
+.mainInicio .sectionInicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .mainInicio .sectionInicio .parrafoInicio {
   margin: 3vh;
   max-width: 80vh;
@@ -95,21 +101,30 @@ nav .logoNav {
   transform: scale(1.05);
   transition: 0.7s;
 }
-.mainServicios .sectionServicios .articleServicios .subTituloServicios {
-  text-align: center;
-  margin: 1vh;
-}
 .mainServicios .sectionServicios .articleServicios .fotoServicios {
   margin: 2vh;
   border-radius: 10px;
   box-shadow: 3px 3px 7px 1px black;
   width: 35vh;
 }
+.mainServicios .sectionServicios .articleServicios .divServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mainServicios .sectionServicios .articleServicios .divServicios .subTituloServicios {
+  text-align: center;
+  margin: 1vh;
+}
 .mainServicios .sectionServicios .articleServicios .parrafoServicios {
   max-width: 35vh;
 }
 
 /* ESTILOS CATEGORIAS */
+.mainCategorias {
+  display: grid;
+}
 .mainCategorias .tituloCategorias {
   text-align: center;
   padding: 3vh;
@@ -199,6 +214,40 @@ nav .logoNav {
   width: 6vh;
 }
 
-/* ESTILOS FOOTER */
+/* TABLET LANDSCAPE */
+@media screen and (min-width: 769px) {
+  /* INICIO */
+  .mainInicio .fotoFrente {
+    max-width: 60vw;
+  }
+  .mainInicio .sectionInicio .parrafoInicio {
+    max-width: 45vw;
+  }
+  /* SERVICIOS */
+  .mainServicios .sectionServicios .articleServicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40vh;
+    width: 40vw;
+    gap: 3vh;
+  }
+  /* CATEGORIAS */
+  .mainCategorias {
+    justify-items: center;
+  }
+  .mainCategorias .sectionCategorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mainCategorias .sectionCategorias .articleCategorias {
+    height: 45vh;
+    width: 27vw;
+    gap: 5vh;
+    margin-bottom: 1vh;
+  }
+  .mainCategorias .sectionCategorias .articleCategorias .linkCategorias .fotoCategorias {
+    max-width: 20vw;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

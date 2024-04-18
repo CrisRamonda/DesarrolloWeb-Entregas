@@ -1,4 +1,5 @@
 // TAMAÑOS FUENTE
+
 @mixin fuenteGrande {
     font-size: xx-large;
     font-weight: 600;
@@ -12,8 +13,8 @@
 }
 
 @mixin fuentePequeña {
-    font-weight: 400;
     font-size: medium;
+    font-weight: 400;
     color: black;
 }
 
@@ -53,6 +54,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+// GRID TEMPLATES COL
+
+@mixin gridTemplate($columnas, $fraccion) {
+    grid-template-columns: repeat($columnas, $fraccion);
+}
+
+// TAMANO ARTICLES
+
+@mixin articleSize($alto, $ancho, $separacion) {
+    height: $alto;
+    width: $ancho;
+    gap: $separacion;
 }
 
 

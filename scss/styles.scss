@@ -60,6 +60,7 @@ nav {
     .fotoFrente {
         align-items: center;
         width: 100vw;
+
     }
 
     .tituloInicio {
@@ -71,7 +72,8 @@ nav {
     }
 
     .sectionInicio {
-        
+        @include flexColumna;
+
         .parrafoInicio {
             margin: 3vh;
             max-width: 80vh;
@@ -99,13 +101,17 @@ nav {
                 @include hoverFoto;
             }
 
-            .subTituloServicios {
-                @include subTitulo;
-            }
-
             .fotoServicios {
                 @include fotoArticulo;
                 width: 35vh;
+            }
+
+            .divServicios {
+                @include flexColumna;
+
+                .subTituloServicios {
+                    @include subTitulo;
+                }
             }
 
             .parrafoServicios {
@@ -119,6 +125,7 @@ nav {
 
 /* ESTILOS CATEGORIAS */
 .mainCategorias {
+    display: grid;
 
     .tituloCategorias {
         @include tituloPrincipal;
@@ -140,8 +147,6 @@ nav {
                 .fotoCategorias {
                     @include fotoArticulo;              
                     width: 35vh;
-
-
                 }
     
                 .subTituloCategorias {
@@ -221,7 +226,65 @@ nav {
 }
 
 
-/* ESTILOS FOOTER */
+// MEDIA QUERIES
+
+/* TABLET LANDSCAPE */
+
+@media screen and (min-width: 769px) {
+    
+    /* INICIO */
+    .mainInicio {
+
+        .fotoFrente {
+            max-width: 60vw;
+        }
+    
+        .sectionInicio {
+
+            .parrafoInicio {
+                max-width: 45vw;
+            }
+        }
+    }
+
+
+    /* SERVICIOS */
+    .mainServicios {
+        
+        .sectionServicios {
+
+            .articleServicios {
+                display: grid;
+                @include gridTemplate(2, 1fr);
+                @include articleSize(40vh, 40vw, 3vh);
+            }
+        }
+    }
+
+
+    /* CATEGORIAS */
+    .mainCategorias {
+        justify-items: center;
+        
+        .sectionCategorias {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .articleCategorias {
+                @include articleSize(45vh, 27vw, 5vh);
+                margin-bottom: 1vh;
+
+                .linkCategorias {
+
+                    .fotoCategorias {
+                        max-width: 20vw;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 
