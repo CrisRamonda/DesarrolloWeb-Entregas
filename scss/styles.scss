@@ -268,10 +268,10 @@ nav {
         
         .sectionCategorias {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);            
 
             .articleCategorias {
-                @include articleSize(45vh, 27vw, 2vh); //AGREGAR MQ PARA MAS ANCHO Y CAMBIAR ALTURA DEL ARTICULO
+                @include articleSize(45vh, 27vw, 1vh); //AGREGAR MQ PARA MAS ANCHO Y CAMBIAR ALTURA DEL ARTICULO
                 margin-bottom: 1vh;
 
                 .linkCategorias {
@@ -280,6 +280,36 @@ nav {
                         max-width: 20vw;
                     }
                 }
+            }
+        }
+    }
+
+
+    /* PRODUCTOS */
+    .mainProductos {
+
+        .sectionProductos {
+            display: grid;
+            @include gridTemplate(3, 1fr);
+            justify-items: center;
+            gap: 3vh;
+
+            .tituloProductos {
+                min-width: 40vw;
+            }
+
+            .fotoProductos {
+                max-width: 25vh;
+            }
+
+            .articleProductos {
+                @include articleSize(auto, 25vw, 1vh);
+                margin-bottom: 1vh;
+
+                .subTituloProductos {
+                    max-width: 30vw;
+                }
+
             }
         }
     }

@@ -242,11 +242,33 @@ nav .logoNav {
   .mainCategorias .sectionCategorias .articleCategorias {
     height: 45vh;
     width: 27vw;
-    gap: 2vh;
+    gap: 1vh;
     margin-bottom: 1vh;
   }
   .mainCategorias .sectionCategorias .articleCategorias .linkCategorias .fotoCategorias {
     max-width: 20vw;
+  }
+  /* PRODUCTOS */
+  .mainProductos .sectionProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 3vh;
+  }
+  .mainProductos .sectionProductos .tituloProductos {
+    min-width: 40vw;
+  }
+  .mainProductos .sectionProductos .fotoProductos {
+    max-width: 25vh;
+  }
+  .mainProductos .sectionProductos .articleProductos {
+    height: auto;
+    width: 25vw;
+    gap: 1vh;
+    margin-bottom: 1vh;
+  }
+  .mainProductos .sectionProductos .articleProductos .subTituloProductos {
+    max-width: 30vw;
   }
 }
 
