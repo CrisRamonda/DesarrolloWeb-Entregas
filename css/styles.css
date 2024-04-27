@@ -216,6 +216,13 @@ nav .logoNav {
 
 /* TABLET LANDSCAPE */
 @media screen and (min-width: 769px) {
+  /* NAV */
+  nav .divNav {
+    padding: 0 20vw;
+  }
+  nav .divNav #navbarNav {
+    justify-content: right;
+  }
   /* INICIO */
   .mainInicio .fotoFrente {
     max-width: 60vw;

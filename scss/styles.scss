@@ -37,9 +37,8 @@ footer {
 
 /* ESTILOS NAV */
 nav {
-
     background-color: $colorSecundario;
-    
+
     .navbar-toggler-icon, div, a, ul, li, .logoNav {
         background-color: $colorSecundario;   
     }
@@ -231,6 +230,17 @@ nav {
 /* TABLET LANDSCAPE */
 
 @media screen and (min-width: 769px) {
+
+    /* NAV */
+    nav {
+        .divNav{
+            padding: 0 20vw;
+
+            #navbarNav {
+                justify-content: right;
+            }
+        }
+    }
     
     /* INICIO */
     .mainInicio {
