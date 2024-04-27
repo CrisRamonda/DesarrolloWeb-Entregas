@@ -54,28 +54,39 @@ nav .logoNav {
   align-items: center;
   text-align: center;
   min-height: 89vh;
-}
-.mainInicio .fotoFrente {
-  align-items: center;
-  width: 100vw;
+  background-image: url("/images/VeteFrente.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
 }
 .mainInicio .tituloInicio {
   text-align: center;
   padding: 3vh;
+  background-color: transparent;
 }
 .mainInicio .subTituloInicio {
   text-align: center;
   margin: 1vh;
+  background-color: transparent;
 }
 .mainInicio .sectionInicio {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: transparent;
 }
-.mainInicio .sectionInicio .parrafoInicio {
+.mainInicio .sectionInicio .divParrafo {
   margin: 3vh;
   max-width: 80vh;
+  margin-top: 60vh;
+  background-color: #ddcce5;
+  border-radius: 25px;
+  opacity: 0.8;
+}
+.mainInicio .sectionInicio .divParrafo .parrafoInicio {
+  padding: 5px;
+  background-color: transparent;
 }
 
 /* ESTILOS SERVICIOS */
@@ -224,9 +235,6 @@ nav .logoNav {
     justify-content: right;
   }
   /* INICIO */
-  .mainInicio .fotoFrente {
-    max-width: 60vw;
-  }
   .mainInicio .sectionInicio .parrafoInicio {
     max-width: 45vw;
   }
@@ -276,6 +284,13 @@ nav .logoNav {
   }
   .mainProductos .sectionProductos .articleProductos .subTituloProductos {
     max-width: 30vw;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .mainInicio {
+    background-size: 110vw auto;
+    background-position-y: -20vh;
   }
 }
 

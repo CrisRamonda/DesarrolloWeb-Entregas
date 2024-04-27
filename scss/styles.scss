@@ -51,32 +51,52 @@ nav {
 
 
 /* ESTILOS INICIO */
+
+
 .mainInicio {
     @include flexColumna;
     min-height: 89vh;
 
+    background-image: url('/images/VeteFrente.png');
+    background-repeat : no-repeat;
+    background-position-x: center;
+    background-size: cover;    
 
-    .fotoFrente {
-        align-items: center;
-        width: 100vw;
 
-    }
+    // .fotoFrente {
+    //     align-items: center;
+    //     width: 100vw;
+
+    // }
 
     .tituloInicio {
         @include tituloPrincipal;
+        background-color: transparent;
     }
 
     .subTituloInicio {
         @include subTitulo;
+        background-color: transparent;
     }
 
     .sectionInicio {
         @include flexColumna;
+        background-color: transparent;
 
-        .parrafoInicio {
+        .divParrafo {
             margin: 3vh;
             max-width: 80vh;
+            margin-top: 60vh;
+            background-color: $colorPrincipal;
+            border-radius: 25px;
+            opacity: 0.8;
+
+            .parrafoInicio {
+                padding: 5px;
+                background-color: transparent;
+            }
         }
+
     }
 }
 
@@ -244,11 +264,7 @@ nav {
     
     /* INICIO */
     .mainInicio {
-
-        .fotoFrente {
-            max-width: 60vw;
-        }
-    
+   
         .sectionInicio {
 
             .parrafoInicio {
@@ -327,4 +343,11 @@ nav {
 }
 
 
+/* DESKTOP */
 
+@media screen and (min-width: 1200px) {
+    .mainInicio {
+        background-size: 110vw auto;
+        background-position-y: -20vh;
+    }
+}
