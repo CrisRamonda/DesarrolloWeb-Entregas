@@ -40,7 +40,7 @@
     box-shadow: 3px 3px 7px 1px black;
 }
 
-// HOVER FOTOS
+// ANIMACIONES
 
 @mixin hoverFoto {
     transform: scale(1.05);
@@ -50,6 +50,10 @@
 @mixin notHoverFoto {
     transform: scale(1);
     transition: 0.7s;
+}
+
+@mixin fadeInTexto {
+    
 }
 
 
@@ -84,5 +88,7 @@
     text-align: center;
     background-color: $colorSecundario;
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 

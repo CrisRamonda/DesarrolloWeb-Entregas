@@ -55,29 +55,12 @@ nav {
 
 .mainInicio {
     @include flexColumna;
-    min-height: 89vh;
+    min-height: 88vh;
 
     background-image: url('../images/VeteFrente.png');
     background-repeat : no-repeat;
     background-position-x: center;
     background-size: cover;    
-
-
-    // .fotoFrente {
-    //     align-items: center;
-    //     width: 100vw;
-
-    // }
-
-    .tituloInicio {
-        @include tituloPrincipal;
-        background-color: transparent;
-    }
-
-    .subTituloInicio {
-        @include subTitulo;
-        background-color: transparent;
-    }
 
     .sectionInicio {
         @include flexColumna;
@@ -196,8 +179,7 @@ nav {
 
     .sectionProductos {
         @include flexColumna;
-        margin-bottom: 1vw;
-    
+      
         .articleProductos {
             @include flexColumna;
             height: 65vh;
