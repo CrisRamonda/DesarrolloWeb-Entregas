@@ -60,7 +60,9 @@ nav {
     background-image: url('../images/VeteFrente.png');
     background-repeat : no-repeat;
     background-position-x: center;
-    background-size: cover;    
+    background-size: cover;
+    
+    @include fadeInTexto;
 
     .sectionInicio {
         @include flexColumna;
