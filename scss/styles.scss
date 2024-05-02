@@ -120,6 +120,10 @@ nav {
                 @include hoverFoto;
             }
 
+            &:not(hover) {
+                @include notHoverFoto;
+            }
+
             .fotoServicios {
                 @include fotoArticulo;
                 width: 35vh;
@@ -151,13 +155,18 @@ nav {
     }
 
     .sectionCategorias {
-        
+        margin-bottom: 1vw;
+
         .articleCategorias {
             @include flexColumna;
             height: 50vh;
             
             &:hover {
                 @include hoverFoto;
+            }
+
+            &:not(hover) {
+                @include notHoverFoto;
             }
 
             .linkCategorias {
@@ -187,6 +196,7 @@ nav {
 
     .sectionProductos {
         @include flexColumna;
+        margin-bottom: 1vw;
     
         .articleProductos {
             @include flexColumna;
@@ -194,6 +204,10 @@ nav {
 
             &:hover {
                 @include hoverFoto;
+            }
+
+            &:not(hover) {
+                @include notHoverFoto;
             }
 
             .fotoProductos {
@@ -220,6 +234,10 @@ nav {
 
     .sectionNosotros {
         @include flexColumna;
+
+        .mapaVete {
+            padding: 3vh;
+        }
 
         .imagenNosotros {
             max-width: 40vh;

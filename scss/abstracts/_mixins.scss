@@ -47,6 +47,13 @@
     transition: 0.7s;
 }
 
+@mixin notHoverFoto {
+    transform: scale(1);
+    transition: 0.7s;
+}
+
+
+
 //  FLEX COLUMNA
 
 @mixin flexColumna {

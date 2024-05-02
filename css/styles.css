@@ -112,6 +112,10 @@ nav .logoNav {
   transform: scale(1.05);
   transition: 0.7s;
 }
+.mainServicios .sectionServicios .articleServicios:not(hover) {
+  transform: scale(1);
+  transition: 0.7s;
+}
 .mainServicios .sectionServicios .articleServicios .fotoServicios {
   margin: 2vh;
   border-radius: 10px;
@@ -140,6 +144,9 @@ nav .logoNav {
   text-align: center;
   padding: 3vh;
 }
+.mainCategorias .sectionCategorias {
+  margin-bottom: 1vw;
+}
 .mainCategorias .sectionCategorias .articleCategorias {
   display: flex;
   flex-direction: column;
@@ -149,6 +156,10 @@ nav .logoNav {
 }
 .mainCategorias .sectionCategorias .articleCategorias:hover {
   transform: scale(1.05);
+  transition: 0.7s;
+}
+.mainCategorias .sectionCategorias .articleCategorias:not(hover) {
+  transform: scale(1);
   transition: 0.7s;
 }
 .mainCategorias .sectionCategorias .articleCategorias .linkCategorias {
@@ -175,6 +186,7 @@ nav .logoNav {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 1vw;
 }
 .mainProductos .sectionProductos .articleProductos {
   display: flex;
@@ -185,6 +197,10 @@ nav .logoNav {
 }
 .mainProductos .sectionProductos .articleProductos:hover {
   transform: scale(1.05);
+  transition: 0.7s;
+}
+.mainProductos .sectionProductos .articleProductos:not(hover) {
+  transform: scale(1);
   transition: 0.7s;
 }
 .mainProductos .sectionProductos .articleProductos .fotoProductos {
@@ -208,6 +224,9 @@ nav .logoNav {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.mainNosotros .sectionNosotros .mapaVete {
+  padding: 3vh;
 }
 .mainNosotros .sectionNosotros .imagenNosotros {
   max-width: 40vh;
