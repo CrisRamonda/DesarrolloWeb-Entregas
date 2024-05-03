@@ -214,6 +214,44 @@ nav .logoNav {
   text-align: left;
 }
 
+/* ESTILOS SIN STOCK */
+.mainSinStock .tituloSinStock {
+  text-align: center;
+  padding: 3vh;
+}
+.mainSinStock .sectionSinStock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mainSinStock .sectionSinStock .articleSinStock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 77vh;
+}
+.mainSinStock .sectionSinStock .articleSinStock .enlaceSinStock .fotoSinStock {
+  margin: 2vh;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px 1px black;
+  width: 35vh;
+}
+.mainSinStock .sectionSinStock .articleSinStock .enlaceSinStock .fotoSinStock:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+.mainSinStock .sectionSinStock .articleSinStock .enlaceSinStock .fotoSinStock:not(hover) {
+  transform: scale(1);
+  transition: 0.7s;
+}
+.mainSinStock .sectionSinStock .articleSinStock .subTituloSinStock {
+  text-align: center;
+  margin: 1vh;
+  width: 80vw;
+}
+
 /* ESTILOS NOSOTROS */
 .mainNosotros .sectionNosotros {
   display: flex;

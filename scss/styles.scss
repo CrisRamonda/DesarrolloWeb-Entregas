@@ -214,6 +214,49 @@ nav {
 }
 
 
+/* ESTILOS SIN STOCK */
+.mainSinStock {
+
+    .tituloSinStock {
+        @include tituloPrincipal;
+    }
+
+    .sectionSinStock {
+        @include flexColumna;
+      
+        .articleSinStock {
+            @include flexColumna;
+            height: 77vh;
+
+            .enlaceSinStock {
+                .fotoSinStock {
+                    @include fotoArticulo;
+                    width: 35vh;
+    
+                    &:hover {
+                        @include hoverFoto;
+                    }
+        
+                    &:not(hover) {
+                        @include notHoverFoto;
+                    }
+                }
+            }
+
+            .subTituloSinStock {
+                @include subTitulo;
+                width: 80vw;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
 /* ESTILOS NOSOTROS */
 
 .mainNosotros {
@@ -303,7 +346,7 @@ nav {
             grid-template-columns: repeat(3, 1fr);            
 
             .articleCategorias {
-                @include articleSize(45vh, 27vw, 1vh); //AGREGAR MQ PARA MAS ANCHO Y CAMBIAR ALTURA DEL ARTICULO
+                @include articleSize(45vh, 27vw, 1vh); 
                 margin-bottom: 1vh;
 
                 .linkCategorias {
