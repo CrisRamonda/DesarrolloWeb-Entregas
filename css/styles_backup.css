@@ -176,8 +176,7 @@ header nav ul li a:hover {
 
 .imagenCategorias {
     max-width: 350px;
-    border-radius: 10px;
-}
+    border-radius: 10p
 
 .articleCategorias {
     display: flex;
@@ -402,3 +401,39 @@ header nav ul li a:hover {
 
 }
 
+
+
+
+/* MIXIN BACKUPS */
+
+@mixin fadeInTexto {
+    
+    animation: fadeInTexto ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    @keyframes fadeInTexto {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin zoomInOut {
+    animation: zoomInOut 120s ease infinite;
+
+    @keyframes zoomInOut {
+        0% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.5, 1.5);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+}

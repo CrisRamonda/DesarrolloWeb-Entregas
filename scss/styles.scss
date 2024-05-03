@@ -37,6 +37,7 @@ footer {
 
 /* ESTILOS NAV */
 nav {
+    z-index: 1;
     background-color: $colorSecundario;
 
     .navbar-toggler-icon, div, a, ul, li, .logoNav {
@@ -62,23 +63,24 @@ nav {
     background-position-x: center;
     background-size: cover;
     
-    @include fadeInTexto;
-
     .sectionInicio {
         @include flexColumna;
         background-color: transparent;
 
         .divParrafo {
+            @include flexColumna;
             margin: 3vh;
             max-width: 80vh;
             margin-top: 60vh;
             background-color: $colorPrincipal;
             border-radius: 25px;
-            opacity: 0.8;
+            opacity: 0.75;
+
 
             .parrafoInicio {
-                padding: 5px;
+                margin: 10px;
                 background-color: transparent;
+
             }
         }
 
@@ -220,7 +222,8 @@ nav {
         @include flexColumna;
 
         .mapaVete {
-            padding: 3vh;
+            padding-bottom: 4vh;
+            justify-self: center;
         }
 
         .imagenNosotros {
@@ -234,6 +237,7 @@ nav {
 
         ul {
             margin-bottom: 3vh;
+            padding: 0;
         }
 
         a {

@@ -40,6 +40,7 @@ footer {
 
 /* ESTILOS NAV */
 nav {
+  z-index: 1;
   background-color: #dbbfe7;
 }
 nav .navbar-toggler-icon, nav div, nav a, nav ul, nav li, nav .logoNav {
@@ -60,17 +61,6 @@ nav .logoNav {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  animation: fadeInTexto ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInTexto {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .mainInicio .sectionInicio {
   display: flex;
@@ -80,15 +70,19 @@ nav .logoNav {
   background-color: transparent;
 }
 .mainInicio .sectionInicio .divParrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin: 3vh;
   max-width: 80vh;
   margin-top: 60vh;
   background-color: #ddcce5;
   border-radius: 25px;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 .mainInicio .sectionInicio .divParrafo .parrafoInicio {
-  padding: 5px;
+  margin: 10px;
   background-color: transparent;
 }
 
@@ -228,7 +222,8 @@ nav .logoNav {
   text-align: center;
 }
 .mainNosotros .sectionNosotros .mapaVete {
-  padding: 3vh;
+  padding-bottom: 4vh;
+  justify-self: center;
 }
 .mainNosotros .sectionNosotros .imagenNosotros {
   max-width: 40vh;
@@ -240,6 +235,7 @@ nav .logoNav {
 }
 .mainNosotros .sectionNosotros ul {
   margin-bottom: 3vh;
+  padding: 0;
 }
 .mainNosotros .sectionNosotros a img {
   margin: 0 0 2vh 0;
