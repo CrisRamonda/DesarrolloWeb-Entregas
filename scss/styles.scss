@@ -189,7 +189,7 @@ nav {
     }
 
     .sectionProductos {
-        max-width: 80%;
+        max-width: 75%;
         @include flexColumna;
     
         
@@ -217,6 +217,15 @@ nav {
 
             ul {
                 text-align: left;
+
+                .botonProductos {
+                    border-color: black;
+                    margin-top: 20px;
+
+                    &:hover {
+                        background-color: $colorSecundario;
+                    }
+                }
             }
         }
     }
@@ -297,6 +306,46 @@ nav {
                 margin: 0 0 2vh 0;;
                 width: 6vh;
             }
+        }
+    }
+
+}
+
+
+/* ESTILOS CARRITO */
+.mainCarrito {
+
+    .tituloCarrito {
+        @include tituloPrincipal;
+    }
+
+    .sectionCarrito {
+        @include flexColumna;
+      
+        .articleCarrito {
+            @include flexColumna;
+            height: 77vh;
+
+            .enlaceCarrito {
+                .fotoCarrito {
+                    @include fotoArticulo;
+                    width: 35vh;
+    
+                    &:hover {
+                        @include hoverFoto;
+                    }
+        
+                    &:not(hover) {
+                        @include notHoverFoto;
+                    }
+                }
+            }
+
+            .subTituloCarrito {
+                @include subTitulo;
+                width: 80vw;
+            }
+
         }
     }
 
@@ -385,8 +434,7 @@ nav {
             }
 
             .articleProductos {
-                @include articleSize(auto, 25vw, 1vh);
-                margin-bottom: 1vh;
+                @include articleSize(40vh, 25vw, 1vh);
 
                 .subTituloProductos {
                     max-width: 30vw;
@@ -410,13 +458,14 @@ nav {
     }
 
      /* PRODUCTOS */
-     .mainProductos {
+    .mainProductos {
 
         .sectionProductos {
             display: grid;
             @include gridTemplate(3, 1fr);
             justify-items: center;
             gap: 3vh;
+            max-width: 75vw;
 
             .tituloProductos {
                 min-width: 40vw;

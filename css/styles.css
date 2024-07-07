@@ -90,6 +90,7 @@ nav .logoNav {
 .mainServicios .tituloServicios {
   text-align: center;
   padding: 3vh;
+  margin: 0;
 }
 .mainServicios .sectionServicios {
   display: flex;
@@ -140,6 +141,7 @@ nav .logoNav {
 .mainCategorias .tituloCategorias {
   text-align: center;
   padding: 3vh;
+  margin: 0;
 }
 .mainCategorias .sectionCategorias {
   margin-bottom: 1vw;
@@ -183,6 +185,7 @@ nav .logoNav {
 .mainProductos .tituloProductos {
   text-align: center;
   padding: 3vh;
+  margin: 0;
 }
 .mainProductos .instruccionProductos {
   font-size: x-large;
@@ -192,7 +195,7 @@ nav .logoNav {
   padding: 1vh;
 }
 .mainProductos .sectionProductos {
-  max-width: 80%;
+  max-width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,11 +230,19 @@ nav .logoNav {
 .mainProductos .sectionProductos .articleProductos ul {
   text-align: left;
 }
+.mainProductos .sectionProductos .articleProductos ul .botonProductos {
+  border-color: black;
+  margin-top: 20px;
+}
+.mainProductos .sectionProductos .articleProductos ul .botonProductos:hover {
+  background-color: #dbbfe7;
+}
 
 /* ESTILOS SIN STOCK */
 .mainSinStock .tituloSinStock {
   text-align: center;
   padding: 3vh;
+  margin: 0;
 }
 .mainSinStock .sectionSinStock {
   display: flex;
@@ -294,6 +305,45 @@ nav .logoNav {
   width: 6vh;
 }
 
+/* ESTILOS CARRITO */
+.mainCarrito .tituloCarrito {
+  text-align: center;
+  padding: 3vh;
+  margin: 0;
+}
+.mainCarrito .sectionCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mainCarrito .sectionCarrito .articleCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 77vh;
+}
+.mainCarrito .sectionCarrito .articleCarrito .enlaceCarrito .fotoCarrito {
+  margin: 2vh;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px 1px black;
+  width: 35vh;
+}
+.mainCarrito .sectionCarrito .articleCarrito .enlaceCarrito .fotoCarrito:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+.mainCarrito .sectionCarrito .articleCarrito .enlaceCarrito .fotoCarrito:not(hover) {
+  transform: scale(1);
+  transition: 0.7s;
+}
+.mainCarrito .sectionCarrito .articleCarrito .subTituloCarrito {
+  text-align: center;
+  margin: 1vh;
+  width: 80vw;
+}
+
 /* TABLET LANDSCAPE */
 @media screen and (min-width: 740px) {
   /* NAV */
@@ -346,10 +396,9 @@ nav .logoNav {
     max-width: 25vh;
   }
   .mainProductos .sectionProductos .articleProductos {
-    height: auto;
+    height: 40vh;
     width: 25vw;
     gap: 1vh;
-    margin-bottom: 1vh;
   }
   .mainProductos .sectionProductos .articleProductos .subTituloProductos {
     max-width: 30vw;
@@ -367,6 +416,7 @@ nav .logoNav {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 3vh;
+    max-width: 75vw;
   }
   .mainProductos .sectionProductos .tituloProductos {
     min-width: 40vw;
