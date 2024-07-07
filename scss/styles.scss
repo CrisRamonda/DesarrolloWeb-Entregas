@@ -176,14 +176,23 @@ nav {
 
 /* ESTILOS PRODUCTOS */
 .mainProductos {
+    @include flexColumna;
 
     .tituloProductos {
         @include tituloPrincipal;
     }
 
+    .instruccionProductos{
+       @include fuenteMedia;
+       font-style: italic;
+       padding: 1vh;
+    }
+
     .sectionProductos {
+        max-width: 80%;
         @include flexColumna;
-      
+    
+        
         .articleProductos {
             @include flexColumna;
             height: 65vh;
@@ -298,7 +307,7 @@ nav {
 
 /* TABLET LANDSCAPE */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 740px) {
 
     /* NAV */
     nav {
@@ -359,15 +368,13 @@ nav {
         }
     }
 
-
     /* PRODUCTOS */
     .mainProductos {
-
         .sectionProductos {
             display: grid;
-            @include gridTemplate(3, 1fr);
+            @include gridTemplate(2, 1fr);
             justify-items: center;
-            gap: 3vh;
+            gap: 10vw;
 
             .tituloProductos {
                 min-width: 40vw;
@@ -389,6 +396,8 @@ nav {
         }
     }
 
+   
+
 }
 
 
@@ -398,5 +407,34 @@ nav {
     .mainInicio {
         background-size: 110vw auto;
         background-position-y: -20vh;
+    }
+
+     /* PRODUCTOS */
+     .mainProductos {
+
+        .sectionProductos {
+            display: grid;
+            @include gridTemplate(3, 1fr);
+            justify-items: center;
+            gap: 3vh;
+
+            .tituloProductos {
+                min-width: 40vw;
+            }
+
+            .fotoProductos {
+                max-width: 25vh;
+            }
+
+            .articleProductos {
+                @include articleSize(auto, 25vw, 1vh);
+                margin-bottom: 1vh;
+
+                .subTituloProductos {
+                    max-width: 20vw;
+                }
+
+            }
+        }
     }
 }
